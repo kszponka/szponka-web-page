@@ -1,5 +1,7 @@
 # WTF Webpack Starter Kit 
 
+HOOOK
+
 Simple toolkit for your static websites development.
 
 ## How to use it?
