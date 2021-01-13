@@ -1,6 +1,6 @@
 # WTF Webpack Starter Kit 
 
-HOOOK
+HOOOK z pusha
 
 Simple toolkit for your static websites development.
 
