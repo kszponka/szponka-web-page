@@ -1,0 +1,17 @@
+.article {
+    background: $grey8;
+    color: $grey1;
+    margin-bottom: 120px;
+
+    &__header {
+        padding: 8px 8px;
+        
+
+    }
+    &__paragraph {
+        margin: 50px;
+        background: $grey5;
+        
+
+    }
+}

@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: header;
+    background: $grey6;
+    height: 60px;
+    max-width: 1200px;;
+  
+  }
+.navigation {
+    display: flex;
+    justify-content: center;  
+  }
+  
+  .navigation__link {
+    color:$grey1;
+    margin-right: 20px;
+    font-style: normal;
+    text-decoration: unset;
+  }

@@ -89,10 +89,10 @@ module.exports = {
       filename: "another.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/css_page.html",
+      template: "./src/pages/frontend_page.html",
       inject: true,
-      chunks: ["index", "css_page"],
-      filename: "css_page.html",
+      chunks: ["index", "frontend_page"],
+      filename: "frontend_page.html",
     }),
   ],
 };
