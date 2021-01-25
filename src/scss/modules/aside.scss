@@ -1,0 +1,21 @@
+// .aside_navigation {
+//     display: flex;
+//     background: pink;
+// }
+
+.navigation__link {
+  letter-spacing: 3px;
+  margin-top: 10px;
+  &:hover {
+    // text-decoration: underline;
+    background: $grey6;
+    // &::before {
+    //   content: ">>> ";
+    // }
+    // &::after {
+    //   content: " <<<";
+    // }
+  }
+}
+
+

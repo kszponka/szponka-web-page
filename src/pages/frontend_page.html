@@ -3,19 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
+    <title>brak2kontekstu</title>
+    <meta name="description" content="This is my notepad" />
     <!-- Title -->
     <meta property="og:title" content="" />
     <!-- OPTIONAL description. 2-4 sentences. -->
     <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+    <!-- full url with http(s) ie. https://... -->
     <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
+    <!-- full url to the image with http(s) ie. https:/....png. Facebook suggests at least 1200 x 630. -->
+    <meta property="og:image" content="https:/....png" />
 
     <!-- uncomment the line below to enable PWA  -->
     <!-- <link rel="manifest" href="manifest.json" /> -->
@@ -26,101 +23,279 @@
     <main class="main">
       <header class="header">
         <nav class="navigation">
-          <a class="navigation__link" href="index.html">HOME</a>
-          <a class="navigation__link" href="css_page.html">FRONTEND</a>
+          <a class="navigation__link" href="frontend_page.html">FRONTEND</a>
           <a class="navigation__link" href="java_page.html">JAVA</a>
           <a class="navigation__link" href="jvm_page.html">JVM</a>
           <a class="navigation__link" href="linux_page.html">LINUX</a>
+          <a class="navigation__link" href="index.html">HOMEPAGE</a>
         </nav>
       </header>
       <section class="article-section">
-        <article>
-          <h2>CSS1</h2>
-          <p>
-            CSS1 ipsum dolor sit amet, consectetur CSS1 elit, sed do eiusmod
-            tempor CSS1 ut labore et dolore magna CSS1. Ut enim ad CSS1 veniam,
-            quis CSS1 exercitation CSS1 laboris nisi ut CSS1 ipsum dolor sit
-            amet, consectetur CSS1 elit, sed do eiusmod tempor CSS1 ut labore et
-            dolore magna CSS1. Ut enim ad CSS1 veniam, quis CSS1 exercitation
-            CSS1 laboris nisi ut FFf
-          </p>
-          <h3>sdfasdfsd</h3>
-          <p>terefere asdfasdfa dasfsa</p>
+        <article class="article">
+          <h2 class="article__header">Preporcessor SASS / SCSS</h2>
+          <p class="article__paragraph">npx node-sass main.cscc main.css</p>
+          <p class="article__paragraph">zmienne</p>
           <div class="codeblock">
             <pre class="codeblock__pre">
-              <code class="codeblock__code">
-public void {
-  terefere asdf = "String"
+                <code class="codeblock__code">
+$myFavColor: #ccc; 
+.main { 
+  background: $myFavColor;
+
+------ SCSS => CSS ------
+
+.main { 
+  background: #ccc; 
+}      </code>
+              </pre>
+          </div>
+          <p class="article__paragraph">@mixin / @include</p>
+
+          <div class="codeblock">
+            <pre class="codeblock__pre">
+                <code class="codeblock__code">
+@mixin borderBackground {
+   border-radius: 5px; 
+   background: blue; 
+  }
+
+.main {
+  @include borderBackground; 
+} 
+
+------ SCSS => CSS ------
+
+.main {
+  border-radius: 5px; 
+  background: blue; 
+}      </code>
+              </pre>
+          </div>
+
+          <p class="article__paragraph">params</p>
+          <div class="codeblock">
+            <pre class="codeblock__pre">
+                <code class="codeblock__code">
+@mixin borderBackgroundParams($radius, $background) {
+  border-radius: $radius; 
+  background: $background; 
+} 
+
+.main {
+  @include borderBackgroundParams(5px, pink); 
+} 
+
+------ SCSS => CSS ------
+
+.main {
+  border-radius: 5px;
+  background: pink; 
+}      </code>
+              </pre>
+          </div>
+          <p class="article__paragraph">@extend</p>
+
+          <div class="codeblock">
+            <pre class="codeblock__pre">
+                <code class="codeblock__code">
+.font-style { 
+  font-size: 13px; 
+  color: green; 
+} 
+.main {
+  color: black;
+  @extend .font-style; 
+} 
+  
+------ SCSS => CSS ------
+
+.font-style, .main {
+  font-size: 13px;
+  color: green; 
+} 
+.main {
+  color: black; 
+}     </code>
+              </pre>
+          </div>
+
+          <p class="article__paragraph">parent selector</p>
+          <div class="codeblock">
+            <pre class="codeblock__pre">
+                <code class="codeblock__code">
+.accordion {
+  max-width: 600px;
+  margin: 4rem auto;
+  width: 90%;
+  font-family: "Raleway", sans-serif; 
+  background: #f4f4f4; 
+  &__copy {
+    display: none;
+    padding: 1rem 1.5rem 2rem 1.5rem; 
+    color: gray;
+    line-height: 1.6; 
+    font-size: 14px; 
+    font-weight: 500; 
+    &--open {
+      display: block; 
+    } 
+    @media (max-width: 768px) {
+      background: black; 
+    } 
+  }
 }
-              </code>
-            </pre>
+
+------ SCSS => CSS ------ 
+
+.accordion {
+  max-width: 600px; 
+  margin: 4rem auto;
+  width: 90%;
+  font-family: "Raleway", sans-serif;
+  background: #f4f4f4; 
+} 
+.accordion__copy {
+  display: none; 
+  padding: 1rem 1.5rem 2rem 1.5rem; 
+  color: gray;
+  line-height: 1.6; 
+  font-size: 14px; 
+  font-weight: 500; 
+}
+.accordion__copy--open { 
+  display: block; 
+}
+@media (max-width: 768px) {
+  .accordion__copy {
+    background: blac; 
+  } 
+}      </code>
+              </pre>
+          </div>
+          <p class="article__paragraph">div example</p>
+          <div class="codeblock">
+            <pre class="codeblock__pre">
+                <code class="codeblock__code">
+.pseudo__div {
+  width: 50%;
+  margin: auto;
+  background: $grey4;
+  color: $grey6;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $grey1;
+  }
+  &::after {
+    content: "AFTER";
+  }
+  &--child {
+    background: $grey2;
+    &:last-child {
+      background: brown;
+      color: $grey3;
+    }
+    &:hover {
+      background: green;
+    }
+    &:not(.special-div) {
+      color: gold;
+    }
+  }
+}     </code>
+              </pre>
+          </div>
+
+          <p class="article__paragraph"></p>
+          <div class="pseudo__div">
+            &lt-- to jest ::before selector w parent divie
+            <div class="pseudo__div--child">first child div</div>
+            <div class="pseudo__div--child">second child div</div>
+            <div class="pseudo__div--child">third child div</div>
+            <div class="pseudo__div--child special-div">
+              fourth child div wih special class
+            </div>
+            <div class="pseudo__div--child">last child div</div>
           </div>
         </article>
 
         <article class="article">
           <h2 class="article__header">CSS1</h2>
           <p class="article__paragraph">
+            CSS2 ipsum dolor sit amet, consectetur CSS1 elit, sed do eiusmod
+            tempor CSS1 ut labore et dolore magna CSS1. Ut enim ad CSS1 veniam,
+            quis CSS1 exercitation CSS1 laboris nisi ut CSS1 ipsum dolor sit
+            amet, consectetur CSS1 elit, sed do eiusmod tempor CSS1 ut labore et
+            dolore magna CSS1. Ut enim ad CSS1 veniam, quis CSS1 exercitation
+            CSS1 laboris nisi ut CSS1 ipsum dolor sit amet, consectetur CSS1
+            elit, sed do eiusmod tempor CSS1 ut labore et dolore magna CSS1. Ut
+            enim ad CSS1 veniam, quis CSS1 exercitation CSS1 laboris nisi ut
             CSS1 ipsum dolor sit amet, consectetur CSS1 elit, sed do eiusmod
             tempor CSS1 ut labore et dolore magna CSS1. Ut enim ad CSS1 veniam,
             quis CSS1 exercitation CSS1 laboris nisi ut CSS1 ipsum dolor sit
             amet, consectetur CSS1 elit, sed do eiusmod tempor CSS1 ut labore et
             dolore magna CSS1. Ut enim ad CSS1 veniam, quis CSS1 exercitation
-            CSS1 laboris nisi ut
+            CSS1 laboris nisi ut CSS1 ipsum dolor sit amet, consectetur CSS1
+            elit, sed do eiusmod tempor CSS1 ut labore et dolore magna CSS1. Ut
+            enim ad CSS1 veniam, quis CSS1 exercitation CSS1 laboris nisi ut
           </p>
         </article>
-        <article>
-          <h2>Pseudoklasy / Pseudoselektory</h2>
 
-          <ul>
-            <li>content: ""</li>
+        <article class="article">
+          <h2 class="article__header">Pseudo-elements / Pseudo-classes</h2>
+          <!-- <p class="article__paragraph"> -->
+
+          <ul class="article__list">
+            <li>content: "";</li>
             <li>element::before</li>
-            sdfsdf
             <li>element::after</li>
             <li>
-              selektor:hover (najechanie) visited(do linków) focus (nawigacja
-              tab)
+              selectors
+              <ul>
+                <li class="selector-hover">selector:hover</li>
+                <li>selector:visited</li>
+                <li class="selector-focus">selector:focus (tab navigation)</li>
+              </ul>
             </li>
             <li>selektor: first-child last-child</li>
             <li>selektor:not(selektor)</li>
           </ul>
-          <a
-          href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
-          >Pseudo-classes</a
-        >
-        </article>
-        <article>
-          <h2>CSS1</h2>
-          <p class="-to-change">
-            CSS1 ipsum dolor sit amet, consectetur CSS1 elit, sed do eiusmod
-            tempor CSS1 ut labore et dolore magna CSS1. Ut enim ad CSS1 veniam,
-            quis CSS1 exercitation CSS1 laboris nisi ut CSS1 ipsum dolor sit
-            amet, consectetur CSS1 elit, sed do eiusmod tempor CSS1 ut labore et
-            dolore magna CSS1. Ut enim ad CSS1 veniam, quis CSS1 exercitation
-            CSS1 laboris nisi ut
-          </p>
-        </article>
-        <article>
-          <h2>CSS1</h2>
-          <p class="o-change">
-            CSS1 ipsum dolor sit amet, consectetur CSS1 elit, sed do eiusmod
-            tempor CSS1 ut labore et dolore magna CSS1. Ut enim ad CSS1 veniam,
-            quis CSS1 exercitation CSS1 laboris nisi ut CSS1 ipsum dolor sit
-            amet, consectetur CSS1 elit, sed do eiusmod tempor CSS1 ut labore et
-            dolore magna CSS1. Ut enim ad CSS1 veniam, quis CSS1 exercitation
-            CSS1 laboris nisi ut
+
+          <div class="codeblock">
+            <pre class="codeblock__pre">
+              <code class="codeblock__code">
+.navigation__link {
+  margin-top: 10px;
+  &:hover {
+    text-decoration: underline;
+    &::before {
+      content: ">>>";
+    }
+  }
+}      </code>
+            </pre>
+          </div>
+
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
+              >PSEUDO-CLASSES DOCUMENTATION</a
+            >
           </p>
         </article>
       </section>
       <aside class="aside">
-        aside
         <nav class="aside_navigation">
-          <a class="navigation__link" href="index.html">HTML</a>
-          <a class="navigation__link" href="html_page.html">CSS</a>
-          <a class="navigation__link" href="css_page.html">JAVASCRIPT</a>
-          <a class="navigation__link" href="js_page.html">FLEXBOX</a>
-          <a class="navigation__link" href="java_page.html">GRID</a>
-          <a class="navigation__link" href="jvm_page.html">NPM</a>
-          <a class="navigation__link" href="linux_page.html">LINUX</a>
+          <a class="navigation__link" href="frontend_page.html">CSS</a>
+          <a class="navigation__link" href="frontend_html.html">HTML</a>
+          <a class="navigation__link" href="frontend_js.html">JAVASCRIPT</a>
+          <a class="navigation__link" href="frontend_flex.html">FLEXBOX</a>
+          <a class="navigation__link" href="frontend_grid.html">GRID</a>
+          <a class="navigation__link" href="frontend_npm.html">NPM</a>
+          <a class="navigation__link" href="frontend_npm.html">TOOLS/LINKS</a>
         </nav>
       </aside>
     </main>

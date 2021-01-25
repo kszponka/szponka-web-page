@@ -1,0 +1,45 @@
+.selector-hover {
+  transition: background-color 0.5s;
+
+  &:hover {
+    background: $grey5;
+  }
+}
+
+.selector-focus {
+  &:focus {
+    border: aqua 2px solid;
+  }
+}
+
+.pseudo__div {
+
+  width: 60%;
+  margin: auto;
+  background: $grey4;
+  color: $grey6;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $grey1;
+  }
+  &::after {
+    content: "to jest ::after selector";
+  }
+  &--child {
+    background: $grey2;
+    &:last-child {
+      background: brown;
+      color: $grey3;
+    }
+    &:hover {
+      background: green;
+    }
+    &:not(.special-div) {
+      color: gold;
+    }
+  }
+}

@@ -1,16 +1,19 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     grid-area: header;
-    background: $grey6;
-    height: 60px;
-    max-width: 1200px;;
+    background: $grey8;
+    height: 80px;
+    width: 100%;
+    font-family: 'Red Rose', cursive;
+    border-bottom: $grey3 1px solid;
+    letter-spacing: 3px;
   
   }
 .navigation {
-    display: flex;
-    justify-content: center;  
+    // display: flex;
+    // justify-content: flex-end;  
   }
   
   .navigation__link {

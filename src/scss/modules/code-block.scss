@@ -1,13 +1,14 @@
 .codeblock {
   &__pre {
-      margin: 0% 7%;
-      border-radius: 5px;
-      background: $grey2;
-      padding-left: 4%;
-      border: $grey5 1px solid;
+    margin: 0% 7%;
+    border-radius: 5px;
+    background: $grey2;
+    color: $grey7;
+    padding-left: 4%;
+    border: $grey5 1px solid;
   }
   &__code {
-       color:$grey7;
-       padding-left: 50%;
+    color: $grey7;
+    padding-left: 50%;
   }
 }

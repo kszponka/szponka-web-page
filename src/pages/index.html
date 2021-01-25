@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
+    <title>brak2kontekstu</title>
+    <meta name="description" content="This is my notepad" />
     <!-- Title -->
     <meta property="og:title" content="" />
     <!-- OPTIONAL description. 2-4 sentences. -->
     <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+    <!-- full url with http(s) ie. https://... -->
     <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+    <!-- full url to the image with http(s) ie. https:/....png. Facebook suggests at least 1200 x 630. -->
     <meta
       property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
+      content="https:/....png"
     />
 
     <!-- uncomment the line below to enable PWA  -->
@@ -22,21 +22,23 @@
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
   </head>
+  <header class="header">
+    <nav class="navigation">
+      
+      <a class="navigation__link" href="frontend_page.html">FRONTEND</a>
+      <a class="navigation__link" href="java_page.html">JAVA</a>
+      <a class="navigation__link" href="jvm_page.html">JVM</a>
+      <a class="navigation__link" href="linux_page.html">LINUX</a>
+      <a class="navigation__link" href="index.html">HOMEPAGE</a>
+    </nav>
+  </header>
   <body class="body">
     <main class="main">
-      <header class="header">
-        <nav class="navigation">
-          <a class="navigation__link" href="index.html">HOME</a>
-          <a class="navigation__link" href="frontend_page.html">FRONTEND</a>
-          <a class="navigation__link" href="java_page.html">JAVA</a>
-          <a class="navigation__link" href="jvm_page.html">JVM</a>
-          <a class="navigation__link" href="linux_page.html">LINUX</a>
-        </nav>
-      </header>
+
       <section class="article-section">
-        <article>
-          <h2>addEventListener</h2>
-          <p class="text-to-change">
+        <article class="article">
+          <h2 class="article__header">CSS1</h2>
+          <p class="article__paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -46,9 +48,9 @@
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </article>
-        <article>
-          <h2>addEventListener</h2>
-          <p class="text-to-change">
+        <article class="article">
+          <h2 class="article__header">CSS1</h2>
+          <p class="article__paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -58,9 +60,9 @@
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </article>
-        <article>
-          <h2>addEventListener</h2>
-          <p class="text-to-change">
+        <article class="article">
+          <h2 class="article__header">CSS1</h2>
+          <p class="article__paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -84,7 +86,6 @@
         </article>
       </section>
       <aside class="aside">
-        aside
         <nav></nav>
       </aside>
     </main>
