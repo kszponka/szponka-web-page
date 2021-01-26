@@ -1,0 +1,56 @@
+.hero {
+    padding: 20px 0 50px 0;
+    &__contact {
+        border-radius: 64px;
+        background: $grey3;
+        color: $grey8;
+        padding: 6px 30px;
+        font-size: 16px;
+        display: inline-block; 
+        text-decoration: none;
+
+
+    }
+    &__image {
+        margin: 20px 0;
+        box-sizing: content-box;
+        width: 150px;
+        height: 140px;
+        border-radius: 50%;
+        border: $grey9 15px solid;
+    }
+    &__image-container  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    &__hello {
+        display: none;
+    }
+    &__header {
+        font-size: 20px;
+        line-height: 22px;
+        text-align: center;
+        color: $grey4;
+        
+    }
+    &__paragraph {
+        // text-align: center ;
+    }
+    &__special {
+        color: black;
+        font-weight: bold;
+        // background: indigo;
+    }
+    &__description {
+        padding: 0 15px;
+        color: $grey4;
+        text-align: center;
+    }
+    &__link {
+        color: $grey2;
+        text-transform: uppercase;
+    }
+
+}

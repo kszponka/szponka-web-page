@@ -5,35 +5,50 @@
 @import "modules/article.scss";
 @import "modules/css_examples.scss";
 @import "modules/aside.scss";
+@import "modules/header.scss";
+@import "modules/hero.scss";
+@import "modules/categories.scss";
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;500&family=Red+Rose:wght@300;500;700&family=Saira+Condensed:wght@100;400;700&display=swap');
 
+
 html {
-  background: $grey8;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-
-}
-.body {
-  background: $grey8;
-  color: #fff;
-  min-height: 100vh;
-  width: 1200px;
-  font-size: 120%;
-  
+  // font-family: 'Inconsolata', monospace;
+  font-family: 'Red Rose', cursive;
 }
 
-.main {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "section aside";
-  grid-template-columns: 3fr 1fr;
-  column-gap: 10px;
-  row-gap: 10px;
-  font-family: 'Inconsolata', monospace;
-  
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
+
+// html {
+//   background: $grey8;
+//   display: flex;
+//   justify-content: center;
+
+// }
+// .body {
+//   background: $grey8;
+//   color: #fff;
+//   min-height: 100vh;
+//   width: 1200px;
+//   font-size: 120%;
+  
+// }
+
+// .main {
+//   display: grid;
+//   grid-template-areas:
+//     "header header"
+//     "section aside";
+//   grid-template-columns: 3fr 1fr;
+//   column-gap: 10px;
+//   row-gap: 10px;
+//   font-family: 'Inconsolata', monospace;
+  
+// }
 
 .article-section {
   background: $grey7;

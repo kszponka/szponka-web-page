@@ -6,16 +6,13 @@
     <title>brak2kontekstu</title>
     <meta name="description" content="This is my notepad" />
     <!-- Title -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="My notes" />
     <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="This is my notepad" />
     <!-- full url with http(s) ie. https://... -->
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="https://krzysztofszponka.info" />
     <!-- full url to the image with http(s) ie. https:/....png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https:/....png"
-    />
+    <meta property="og:image" content="https:/....png" />
 
     <!-- uncomment the line below to enable PWA  -->
     <!-- <link rel="manifest" href="manifest.json" /> -->
@@ -24,7 +21,6 @@
   </head>
   <header class="header">
     <nav class="navigation">
-      
       <a class="navigation__link" href="frontend_page.html">FRONTEND</a>
       <a class="navigation__link" href="java_page.html">JAVA</a>
       <a class="navigation__link" href="jvm_page.html">JVM</a>
@@ -32,62 +28,141 @@
       <a class="navigation__link" href="index.html">HOMEPAGE</a>
     </nav>
   </header>
-  <body class="body">
-    <main class="main">
+  <body>
+    <main>
+      <section class="hero">
+        <div class="hero__image-container">
+        <img
+          class="hero__image"
+          src="../assets/img/jack.png"
+          alt="My picture"
+        />
+        <span class="hero__hello"> Yo!</span>
+      </div>
+        <div class="hero__description">
+          <h1 class="hero__header">
+            Jestem Krzychu a to jest moja pierwsza strona internetowa. Uczę się
+            tutaj frontendu więc zostawiam tu swoje różne notatki, bardzo często
+            <span class="hero__special">bez kontekstu</span> więć nie można ich
+            nazwać artykułami
+          </h1>
+          <p class="hero__paragraph">
+            Uczę się frontendu więć zostawiam tu swoje różne notatki, bardzo
+            często <span class="hero__special">bez kontekstu</span> więć nie
+            można ich nazwać artykułami Dobrze mieć wszystko w jednym miejscu.
+            <a class="hero__link" href="#projects">my projects</a> Za jakość materiałów nie
+            odpowiadam. Czytasz na własną odpowiedzialność. Nie ma możliwości
+            komentowania ani krytki ale jak chcesz możesz się ze mną
+            skontaktować <a class="hero__link" href="#contact">tutaj</a>.
+          </p>
+          <a class="hero__contact" href="mailto:k.szponka@gmail.com"
+            >k.szponka@gmail.com</a
+          >
+        </div>
+      </section>
+      <section class="categories" id="categories">
+        <h2 class="categories__header">CATEGORIES</h2>
+        <article class="category-section">
+          <span class="category-section__picture--front">&lt/></span>
+          <h3 class="category-section__header">FRONTEND</h3>
+          <ul class="category-list">
+            <li class="category-list__item">CSS</li>
+            <li class="category-list__item">HTML</li>
+            <li class="category-list__item">JS</li>
+            <li class="category-list__item"></li>
+            <li class="category-list__item"></li>
+          </ul>
+        </article>
 
-      <section class="article-section">
-        <article class="article">
-          <h2 class="article__header">CSS1</h2>
-          <p class="article__paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+        <article class="category-section">
+          <img class="category-section__picture category-section__picture--jvm-ducke" src="../assets/img/java_duke.png" alt="FRONTEND PICTURE" />
+          <h3 class="category-section__header">JVM</h3>
+          <ul class="category-list">
+            <li class="category-list__item">JIT</li>
+            <li class="category-list__item">GC</li>
+            <li class="category-list__item">TUNING</li>
+            <li class="category-list__item"></li>
+            <li class="category-list__item"></li>
+          </ul>
         </article>
-        <article class="article">
-          <h2 class="article__header">CSS1</h2>
-          <p class="article__paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+
+        <article class="category-section">
+          <img class="category-section__picture" src="../assets/img/java_logo.png" alt="FRONTEND PICTURE" />
+          <h3 class="category-section__header">JAVA</h3>
+          <ul class="category-list">
+            <li class="category-list__item">STREAM</li>
+            <li class="category-list__item">OPTIONAL</li>
+            <li class="category-list__item">JS</li>
+            <li class="category-list__item"></li>
+            <li class="category-list__item"></li>
+          </ul>
         </article>
-        <article class="article">
-          <h2 class="article__header">CSS1</h2>
-          <p class="article__paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </article>
-        <article>
-          <h2>addEventListener</h2>
-          <p class="text-to-change">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+
+        <article class="category__section">
+          <img class="category-section__picture category-section__picture--linux" src="../assets/img/linux_logo.png" alt="FRONTEND PICTURE" />
+          <h3 class="category-section__header">LINUX</h3>
+          <ul class="category-list">
+            <li class="category-list__item">GIT</li>
+            <li class="category-list__item">NGINX</li>
+            <li class="category-list__item">
+              <a class="category-list__item--link" href="#" title="docker">DOCKER</a>
+            </li>
+            <li class="category-list__item"></li>
+            <li class="category-list__item"></li>
+          </ul>
         </article>
       </section>
-      <aside class="aside">
-        <nav></nav>
-      </aside>
+
+      <section class="commits">
+        <h2 class="commits__header">Ostatnio commitowane</h2>
+        <p class="commits__description">
+          Chciałem tu wyświetlić listę ostatnich wpisów ale, że strona jest
+          raczej statyczna a wpisy dodawane są bezpośrednio w kodzie więc
+          poniżej dynamiczna lista ostatnich commitów (jeszcze nie jestem pewien
+          GitHubowego API).
+        </p>
+        <div class="commits-grid">
+          <article class="commit_item">
+            <p>
+              <span>data</span>
+              <span>wartosc</span>
+            </p>
+            <p>
+              <span>message</span>
+              <span>wartosc</span>
+            </p>
+            <p>
+              <span>lista plikow</span>
+              <span>wartosc</span>
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="contact__header">Kontakt</h2>
+        <p class="contaCT__description">
+          Jeśli chcesz się skontaktować to możesz tutaj
+        </p>
+        <div class="contact__list">
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link"  href="">
+                <img class="social__icon" alt="social_icon">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link"  href="">
+                <img class="social__icon" alt="social_icon">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link"  href="">
+                <img class="social__icon" alt="social_icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
 </html>
