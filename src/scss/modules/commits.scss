@@ -1,0 +1,66 @@
+.commits {
+    padding: 15px 15px 40px 15px;
+    text-align: center;
+    color: $grey3;
+    &__description {
+        margin-bottom: 35px;
+    }
+    &__header {
+        color: $grey2;
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 2px;
+      }
+
+}
+
+ .commits-grid {
+     background: $grey5;
+     color:$grey2;
+     border-radius: 15px;
+     box-shadow: 0 4px 16px #00000071;
+     overflow: hidden;
+     font-family: Roboto Mono;
+     font-size: 13px;
+     border: $grey4 1px solid;
+     &__window {
+         height: 30px;
+         background:$grey1;
+         display: flex;
+         align-items: center;
+         justify-content: flex-start;
+     }
+     &__grid {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        column-gap: 8px;
+        margin: 5px 0;
+
+    
+    
+     }
+     &__label {
+         display: block;
+         text-align: right;
+     }
+     &__value {
+         text-align: left;
+     }
+ }
+
+.github-logo {
+    width: 30px;
+    filter: invert(100)
+}
+
+ .commit_circle {
+     width: 8px;
+     height: 8px;
+     margin-left: 5px;
+     background: $grey3;
+     border-radius: 50%;
+    //  margin-top: 5px;
+    // align-items: center;
+    // flex-con;
+    
+ }

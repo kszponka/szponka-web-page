@@ -55,9 +55,7 @@
             komentowania ani krytki ale jak chcesz możesz się ze mną
             skontaktować <a class="hero__link" href="#contact">tutaj</a>.
           </p>
-          <a class="hero__contact" href="mailto:k.szponka@gmail.com"
-            >k.szponka@gmail.com</a
-          >
+
         </div>
       </section>
       <section class="categories" id="categories">
@@ -114,36 +112,46 @@
       </section>
 
       <section class="commits">
-        <h2 class="commits__header">Ostatnio commitowane</h2>
+        <h2 class="commits__header">COMMITS</h2>
         <p class="commits__description">
           Chciałem tu wyświetlić listę ostatnich wpisów ale, że strona jest
           raczej statyczna a wpisy dodawane są bezpośrednio w kodzie więc
           poniżej dynamiczna lista ostatnich commitów (jeszcze nie jestem pewien
           GitHubowego API).
         </p>
-        <div class="commits-grid">
-          <article class="commit_item">
-            <p>
-              <span>data</span>
-              <span>wartosc</span>
+        <div class="commits-grid commits-grid--js">
+          <article class="commits-grid__item">
+            <div class="commits-grid__window">
+              <img class="github-logo" src="../assets/img/github_logo.png" alt="">
+              <span class="commit_circle"></span>
+              <span class="commit_circle"></span>
+              <span class="commit_circle"></span>
+            </div>
+            <div class="commits-grid__content">
+            <p class="commits-grid__grid">
+              <span class="commits-grid__label">data:</span>
+              <span class="commits-grid__value">wartosc</span>
             </p>
-            <p>
-              <span>message</span>
-              <span>wartosc</span>
+            <p class="commits-grid__grid">
+              <span class="commits-grid__label">message:</span>
+              <span class="commits-grid__value">wartosc</span>
             </p>
-            <p>
-              <span>lista plikow</span>
-              <span>wartosc</span>
+            <p class="commits-grid__grid">
+              <span class="commits-grid__label">file list:</span>
+              <span class="commits-grid__value">wartosc wartoscddddd wartosc wartosc</span>
             </p>
+          </div>
           </article>
         </div>
       </section>
       <section class="contact" id="contact">
-        <h2 class="contact__header">Kontakt</h2>
-        <p class="contaCT__description">
-          Jeśli chcesz się skontaktować to możesz tutaj
-        </p>
-        <div class="contact__list">
+        <h2 class="contact__header">CONTACT ME</h2>
+        <a class="hero__contact" href="mailto:k.szponka@gmail.com"
+        >k.szponka@gmail.com</a
+      >
+
+
+        <!-- <div class="contact__list">
           <ul class="socials">
             <li class="socials__item">
               <a class="socials__link"  href="">
@@ -161,7 +169,7 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </section>
     </main>
   </body>
