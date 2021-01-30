@@ -1,44 +1,22 @@
-import '../scss/main.scss';
+import "../scss/main.scss";
 
-console.log('HELLO 🚀')
+console.log("HELLO 🚀");
+
+const button = document.querySelector('.button-js');
+
+button.addEventListener('click', () => {
+  const heading = document.querySelector('.heading-js');
+  heading.classList.toggle('klasa-z-js')
+
+})
 
 const urlList = [];
-// pushed = myFish.push("bęben", "lew");
 
-fetch('https://api.github.com/repos/kszponka/szponka-web-page/commits')
-    .then(res => res.json())
-    .then(res => {
-        // console.log(res);
-        const container = document.querySelector('commits-grid--js');
-        for (let commit of res) {
-            const { url } = commit;
-            urlList.push(url)
-            // console.log(url);
-        }
-    })
-// console.log(length(urlList));
-console.log(Array.isArray(urlList));
+async function getCommitList() {
+  response = await fetch("https://api.github.com/repos/kszponka/szponka-web-page/commits");
+  const json = await response.json();
+  return json;
 
-// var i;
-// for (i = 0; i < 5; i++) {
-//   console.log(urlList[0]);
-// }
-
-
-for (dupa of urlList){
-    console.log(dupa);
 }
 
-// urlList.prototype.forEach(url => {
-//     console.log(url)
-// })
-
-    // urlList.slice(0, 4).forEach( url => {
-    //     console.log(url)
-    //     fetch(url)
-    //     .then(res => res.json())
-    //     .then(res => {
-    //         const {list} = res;
-    //         console.log(list);
-    //     })
-    // })
+console.log(getCommitList());

@@ -1,10 +1,10 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     grid-area: header;
     background: $grey8;
-    height: 80px;
+    // height: 80px;
     width: 100%;
     font-family: 'Red Rose', cursive;
     border-bottom: $grey3 1px solid;
@@ -12,13 +12,16 @@
   
   }
 .navigation {
-    // display: flex;
-    // justify-content: flex-end;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
   }
   
   .navigation__link {
     color:$grey1;
-    margin-right: 20px;
+    // margin-right: 20px;
     font-style: normal;
     text-decoration: unset;
+    font-size: 18px;
   }

@@ -29,33 +29,32 @@
     </nav>
   </header>
   <body>
+    <div class="heading-js">heading</div>
+    <button class="button-js">button</button>
     <main>
       <section class="hero">
         <div class="hero__image-container">
-        <img
-          class="hero__image"
-          src="../assets/img/jack.png"
-          alt="My picture"
-        />
-        <span class="hero__hello"> Yo!</span>
-      </div>
+          <img
+            class="hero__image"
+            src="../assets/img/jack.png"
+            alt="My picture"
+          />
+          <span class="hero__hello"> Yo!</span>
+        </div>
         <div class="hero__description">
-          <h1 class="hero__header">
-            Jestem Krzychu a to jest moja pierwsza strona internetowa. Uczę się
-            tutaj frontendu więc zostawiam tu swoje różne notatki, bardzo często
-            <span class="hero__special">bez kontekstu</span> więć nie można ich
-            nazwać artykułami
-          </h1>
-          <p class="hero__paragraph">
-            Uczę się frontendu więć zostawiam tu swoje różne notatki, bardzo
-            często <span class="hero__special">bez kontekstu</span> więć nie
-            można ich nazwać artykułami Dobrze mieć wszystko w jednym miejscu.
-            <a class="hero__link" href="#projects">my projects</a> Za jakość materiałów nie
-            odpowiadam. Czytasz na własną odpowiedzialność. Nie ma możliwości
-            komentowania ani krytki ale jak chcesz możesz się ze mną
+          <h1 class="hero__header">Jestem Krzychu a to mój warsztat.</h1>
+          <p class="hero__paragraph">            
+            Zawodowo kilkanaście miesięcy jako java developer, hobbystycznie kilka miesięcy jako webdeveloper.
+            Bez zahamowań zostawiam tu swoje notatki oraz ćwiczę się w technologiach.
+            Wpisy są dość luźnie, bardzo często to zwykły
+            kawałek kodu bez kontekstu. 
+            Za rzetelność materiałów nie odpowiadam.                 
+            Strona jest statyczna. Notatki sporządzam bezpośrednio w kodzie. Jedyny
+            dynamiczny akcent to pobieranie informacji o ostatnich
+            <a class="hero__link" href="#commits">commitach</a>. Nie ma
+            możliwości komentowania ale jeśli chcesz, możesz się ze mną
             skontaktować <a class="hero__link" href="#contact">tutaj</a>.
           </p>
-
         </div>
       </section>
       <section class="categories" id="categories">
@@ -73,83 +72,99 @@
         </article>
 
         <article class="category-section">
-          <img class="category-section__picture category-section__picture--jvm-ducke" src="../assets/img/java_duke.png" alt="FRONTEND PICTURE" />
+          <img
+            class="category-section__picture category-section__picture--jvm-ducke"
+            src="../assets/img/java_duke.png"
+            alt="FRONTEND PICTURE"
+          />
           <h3 class="category-section__header">JVM</h3>
           <ul class="category-list">
             <li class="category-list__item">JIT</li>
             <li class="category-list__item">GC</li>
             <li class="category-list__item">TUNING</li>
-            <li class="category-list__item"></li>
+            <li class="category-list__item">TOOLS</li>
             <li class="category-list__item"></li>
           </ul>
         </article>
 
         <article class="category-section">
-          <img class="category-section__picture" src="../assets/img/java_logo.png" alt="FRONTEND PICTURE" />
+          <img
+            class="category-section__picture"
+            src="../assets/img/java_logo.png"
+            alt="FRONTEND PICTURE"
+          />
           <h3 class="category-section__header">JAVA</h3>
           <ul class="category-list">
             <li class="category-list__item">STREAM</li>
-            <li class="category-list__item">OPTIONAL</li>
-            <li class="category-list__item">JS</li>
-            <li class="category-list__item"></li>
-            <li class="category-list__item"></li>
+            <li class="category-list__item">INTERFACES</li>
+            <li class="category-list__item">JAVA</li>
+            <li class="category-list__item">SPRING</li>
+            <li class="category-list__item">DESIGN PATTERNS</li>
           </ul>
         </article>
 
         <article class="category__section">
-          <img class="category-section__picture category-section__picture--linux" src="../assets/img/linux_logo.png" alt="FRONTEND PICTURE" />
+          <img
+            class="category-section__picture category-section__picture--linux"
+            src="../assets/img/linux_logo.png"
+            alt="FRONTEND PICTURE"
+          />
           <h3 class="category-section__header">LINUX</h3>
           <ul class="category-list">
             <li class="category-list__item">GIT</li>
             <li class="category-list__item">NGINX</li>
             <li class="category-list__item">
-              <a class="category-list__item--link" href="#" title="docker">DOCKER</a>
+              <a class="category-list__item--link" href="#" title="docker"
+                >DOCKER</a
+              >
             </li>
-            <li class="category-list__item"></li>
+            <li class="category-list__item">BASICS</li>
             <li class="category-list__item"></li>
           </ul>
         </article>
       </section>
 
-      <section class="commits">
+      <section class="commits" id="commits">
         <h2 class="commits__header">COMMITS</h2>
         <p class="commits__description">
-          Chciałem tu wyświetlić listę ostatnich wpisów ale, że strona jest
-          raczej statyczna a wpisy dodawane są bezpośrednio w kodzie więc
-          poniżej dynamiczna lista ostatnich commitów (jeszcze nie jestem pewien
-          GitHubowego API).
+          Lista ostatnich 5 commitów wraz z zmodyfikowanymi plikami
         </p>
         <div class="commits-grid commits-grid--js">
           <article class="commits-grid__item">
             <div class="commits-grid__window">
-              <img class="github-logo" src="../assets/img/github_logo.png" alt="">
+              <img
+                class="github-logo"
+                src="../assets/img/github_logo.png"
+                alt=""
+              />
               <span class="commit_circle"></span>
               <span class="commit_circle"></span>
               <span class="commit_circle"></span>
             </div>
             <div class="commits-grid__content">
-            <p class="commits-grid__grid">
-              <span class="commits-grid__label">data:</span>
-              <span class="commits-grid__value">wartosc</span>
-            </p>
-            <p class="commits-grid__grid">
-              <span class="commits-grid__label">message:</span>
-              <span class="commits-grid__value">wartosc</span>
-            </p>
-            <p class="commits-grid__grid">
-              <span class="commits-grid__label">file list:</span>
-              <span class="commits-grid__value">wartosc wartoscddddd wartosc wartosc</span>
-            </p>
-          </div>
+              <p class="commits-grid__grid">
+                <span class="commits-grid__label">data:</span>
+                <span class="commits-grid__value">wartosc</span>
+              </p>
+              <p class="commits-grid__grid">
+                <span class="commits-grid__label">message:</span>
+                <span class="commits-grid__value">wartosc</span>
+              </p>
+              <p class="commits-grid__grid">
+                <span class="commits-grid__label">file list:</span>
+                <span class="commits-grid__value"
+                  >wartosc wartoscddddd wartosc wartosc</span
+                >
+              </p>
+            </div>
           </article>
         </div>
       </section>
       <section class="contact" id="contact">
         <h2 class="contact__header">CONTACT ME</h2>
         <a class="hero__contact" href="mailto:k.szponka@gmail.com"
-        >k.szponka@gmail.com</a
-      >
-
+          >k.szponka@gmail.com</a
+        >
 
         <!-- <div class="contact__list">
           <ul class="socials">
